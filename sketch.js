@@ -1,13 +1,14 @@
-const sketchHeight = 400;
-const sketchWidth = 400;
-const numShapesX = 5; // Adjust the number of shapes along the x-axis
-const numShapesY = 5; // Adjust the number of shapes along the y-axis
+const sketchHeight = 4000;
+const sketchWidth = 4000;
+const numShapesX = 45; // Adjust the number of shapes along the x-axis
+const numShapesY = 45; // Adjust the number of shapes along the y-axis
 const shapeDistanceX = 80; // Adjust the distance between shapes along the x-axis
 const shapeDistanceY = 80; // Adjust the distance between shapes along the y-axis
 const shapeSize = 40; // Adjust the size of the shapes
 let off = 1;
 
 function setup() {
+  pixelDensity(1)
   createCanvas(sketchWidth, sketchHeight);
 }
 
@@ -40,4 +41,5 @@ function draw() {
   }
 
   noLoop();
+  // save("polor.jpg")
 }
